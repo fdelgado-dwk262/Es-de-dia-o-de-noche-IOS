@@ -6,19 +6,107 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		391A43DF2F3B434800E2DDBB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A43DE2F3B434800E2DDBB /* WidgetKit.framework */; };
+		391A43E12F3B434800E2DDBB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A43E02F3B434800E2DDBB /* SwiftUI.framework */; };
+		391A43F22F3B434900E2DDBB /* EsDeNocheWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 391A43DC2F3B434800E2DDBB /* EsDeNocheWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		398159522F3B6394005BD83C /* EsDeNocheWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 398159512F3B6394005BD83C /* EsDeNocheWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		391A43F02F3B434900E2DDBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B5A2002F3B32D400256545 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 391A43DB2F3B434800E2DDBB;
+			remoteInfo = EsDeNocheWidgetExtension;
+		};
+		398159532F3B6394005BD83C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B5A2002F3B32D400256545 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 398159502F3B6394005BD83C;
+			remoteInfo = "EsDeNocheWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		391A43F32F3B434900E2DDBB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				391A43F22F3B434900E2DDBB /* EsDeNocheWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3981595E2F3B6395005BD83C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				398159522F3B6394005BD83C /* EsDeNocheWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		391A43DC2F3B434800E2DDBB /* EsDeNocheWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EsDeNocheWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		391A43DE2F3B434800E2DDBB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		391A43E02F3B434800E2DDBB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3981594C2F3B6394005BD83C /* EsDeNocheWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsDeNocheWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		398159512F3B6394005BD83C /* EsDeNocheWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EsDeNocheWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B5A2082F3B32D400256545 /* Es de dia o de noche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Es de dia o de noche.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		398159312F3B5A4E005BD83C /* Exceptions for "Es de dia o de noche" folder in "Es de dia o de noche" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EsDeNocheWidget.swift,
+			);
+			target = 39B5A2072F3B32D400256545 /* Es de dia o de noche */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		398159552F3B6394005BD83C /* EsDeNocheWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "EsDeNocheWatch Watch App";
+			sourceTree = "<group>";
+		};
 		39B5A20A2F3B32D400256545 /* Es de dia o de noche */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				398159312F3B5A4E005BD83C /* Exceptions for "Es de dia o de noche" folder in "Es de dia o de noche" target */,
+			);
 			path = "Es de dia o de noche";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		391A43D92F3B434800E2DDBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391A43E12F3B434800E2DDBB /* SwiftUI.framework in Frameworks */,
+				391A43DF2F3B434800E2DDBB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3981594E2F3B6394005BD83C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39B5A2052F3B32D400256545 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +117,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391A43DD2F3B434800E2DDBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				391A43DE2F3B434800E2DDBB /* WidgetKit.framework */,
+				391A43E02F3B434800E2DDBB /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39B5A1FF2F3B32D400256545 = {
 			isa = PBXGroup;
 			children = (
 				39B5A20A2F3B32D400256545 /* Es de dia o de noche */,
+				398159552F3B6394005BD83C /* EsDeNocheWatch Watch App */,
+				391A43DD2F3B434800E2DDBB /* Frameworks */,
 				39B5A2092F3B32D400256545 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				39B5A2082F3B32D400256545 /* Es de dia o de noche.app */,
+				391A43DC2F3B434800E2DDBB /* EsDeNocheWidgetExtension.appex */,
+				3981594C2F3B6394005BD83C /* EsDeNocheWatch.app */,
+				398159512F3B6394005BD83C /* EsDeNocheWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +150,66 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		391A43DB2F3B434800E2DDBB /* EsDeNocheWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391A43F72F3B434900E2DDBB /* Build configuration list for PBXNativeTarget "EsDeNocheWidgetExtension" */;
+			buildPhases = (
+				391A43D82F3B434800E2DDBB /* Sources */,
+				391A43D92F3B434800E2DDBB /* Frameworks */,
+				391A43DA2F3B434800E2DDBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EsDeNocheWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = EsDeNocheWidgetExtension;
+			productReference = 391A43DC2F3B434800E2DDBB /* EsDeNocheWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3981594B2F3B6394005BD83C /* EsDeNocheWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 398159622F3B6395005BD83C /* Build configuration list for PBXNativeTarget "EsDeNocheWatch" */;
+			buildPhases = (
+				3981594A2F3B6394005BD83C /* Resources */,
+				3981595E2F3B6395005BD83C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				398159542F3B6394005BD83C /* PBXTargetDependency */,
+			);
+			name = EsDeNocheWatch;
+			packageProductDependencies = (
+			);
+			productName = EsDeNocheWatch;
+			productReference = 3981594C2F3B6394005BD83C /* EsDeNocheWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		398159502F3B6394005BD83C /* EsDeNocheWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 398159612F3B6395005BD83C /* Build configuration list for PBXNativeTarget "EsDeNocheWatch Watch App" */;
+			buildPhases = (
+				3981594D2F3B6394005BD83C /* Sources */,
+				3981594E2F3B6394005BD83C /* Frameworks */,
+				3981594F2F3B6394005BD83C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				398159552F3B6394005BD83C /* EsDeNocheWatch Watch App */,
+			);
+			name = "EsDeNocheWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "EsDeNocheWatch Watch App";
+			productReference = 398159512F3B6394005BD83C /* EsDeNocheWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		39B5A2072F3B32D400256545 /* Es de dia o de noche */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39B5A2132F3B32D500256545 /* Build configuration list for PBXNativeTarget "Es de dia o de noche" */;
@@ -55,10 +217,12 @@
 				39B5A2042F3B32D400256545 /* Sources */,
 				39B5A2052F3B32D400256545 /* Frameworks */,
 				39B5A2062F3B32D400256545 /* Resources */,
+				391A43F32F3B434900E2DDBB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				391A43F12F3B434900E2DDBB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				39B5A20A2F3B32D400256545 /* Es de dia o de noche */,
@@ -80,8 +244,18 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					391A43DB2F3B434800E2DDBB = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					3981594B2F3B6394005BD83C = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					398159502F3B6394005BD83C = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					39B5A2072F3B32D400256545 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 				};
 			};
@@ -100,11 +274,35 @@
 			projectRoot = "";
 			targets = (
 				39B5A2072F3B32D400256545 /* Es de dia o de noche */,
+				391A43DB2F3B434800E2DDBB /* EsDeNocheWidgetExtension */,
+				3981594B2F3B6394005BD83C /* EsDeNocheWatch */,
+				398159502F3B6394005BD83C /* EsDeNocheWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		391A43DA2F3B434800E2DDBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3981594A2F3B6394005BD83C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3981594F2F3B6394005BD83C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39B5A2062F3B32D400256545 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +313,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		391A43D82F3B434800E2DDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3981594D2F3B6394005BD83C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39B5A2042F3B32D400256545 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +336,178 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		391A43F12F3B434900E2DDBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 391A43DB2F3B434800E2DDBB /* EsDeNocheWidgetExtension */;
+			targetProxy = 391A43F02F3B434900E2DDBB /* PBXContainerItemProxy */;
+		};
+		398159542F3B6394005BD83C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 398159502F3B6394005BD83C /* EsDeNocheWatch Watch App */;
+			targetProxy = 398159532F3B6394005BD83C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		391A43F42F3B434900E2DDBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D376S6N7R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EsDeNocheWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EsDeNocheWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fernandodm.Es-de-dia-o-de-noche.EsDeNocheWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		391A43F52F3B434900E2DDBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D376S6N7R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EsDeNocheWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EsDeNocheWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fernandodm.Es-de-dia-o-de-noche.EsDeNocheWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3981595C2F3B6395005BD83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D376S6N7R;
+				INFOPLIST_KEY_CFBundleDisplayName = EsDeNocheWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodm.EsDeNocheWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3981595D2F3B6395005BD83C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D376S6N7R;
+				INFOPLIST_KEY_CFBundleDisplayName = EsDeNocheWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodm.EsDeNocheWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3981595F2F3B6395005BD83C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D376S6N7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = EsDeNocheWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodm.EsDeNocheWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		398159602F3B6395005BD83C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D376S6N7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = EsDeNocheWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fernandodm.EsDeNocheWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
 		39B5A2112F3B32D500256545 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,6 +634,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7D376S6N7R;
@@ -261,6 +645,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -272,6 +657,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Es de dia o de noche/Es de dia o de noche-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -283,6 +670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7D376S6N7R;
@@ -293,6 +681,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +693,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Es de dia o de noche/Es de dia o de noche-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +703,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		391A43F72F3B434900E2DDBB /* Build configuration list for PBXNativeTarget "EsDeNocheWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391A43F42F3B434900E2DDBB /* Debug */,
+				391A43F52F3B434900E2DDBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		398159612F3B6395005BD83C /* Build configuration list for PBXNativeTarget "EsDeNocheWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3981595F2F3B6395005BD83C /* Debug */,
+				398159602F3B6395005BD83C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		398159622F3B6395005BD83C /* Build configuration list for PBXNativeTarget "EsDeNocheWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3981595C2F3B6395005BD83C /* Debug */,
+				3981595D2F3B6395005BD83C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		39B5A2032F3B32D400256545 /* Build configuration list for PBXProject "Es de dia o de noche" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
